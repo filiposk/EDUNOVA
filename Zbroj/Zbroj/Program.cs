@@ -13,13 +13,15 @@ namespace Zbroj
             bool isRunning = true;
             while (isRunning)
             {
-                int op1, op2;
+                int op1, op2, result;
                 Console.Write("Enter first operand: ");
                 op1 = int.Parse(Console.ReadLine());
                 Console.Write("Enter second operand: ");
                 op2 = int.Parse(Console.ReadLine());
 
-                Console.WriteLine(String.Format("Result is: {0}", op1 + op2));
+                result = op1 + op2;
+
+                Console.WriteLine("Result is: " + result);
                 Console.WriteLine("---------------------------");
             }
         }
